@@ -12,15 +12,15 @@ FreqPeriodCounter	KEYWORD1
 # Methods and Functions (KEYWORD2)
 #######################################
 
-poll KEYWORD2
-synchronize KEYWORD2
-ready KEYWORD2 KEYWORD2
-hertz KEYWORD2 KEYWORD2
-period KEYWORD2
-pulseWidth KEYWORD2
-pulseWidthLow KEYWORD2
-elapsedTime KEYWORD2
-level KEYWORD2
+poll	KEYWORD2
+synchronize	KEYWORD2
+ready	KEYWORD2	KEYWORD2
+hertz	KEYWORD2	KEYWORD2
+period	KEYWORD2
+pulseWidth	KEYWORD2
+pulseWidthLow	KEYWORD2
+elapsedTime	KEYWORD2
+level	KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)
