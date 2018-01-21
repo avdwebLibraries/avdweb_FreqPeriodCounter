@@ -1,21 +1,19 @@
 #include <FreqPeriodCounter.h>
-//#include <Albert.h>
 #include <Streaming.h>
 #include <TimerOne.h> 
 
-/* Note: connect d3 to d9 */
+// Works on Arduino Uno, not on Zero
+// Puts a PWM signal on d9 and measure it at d3 
+// Note: connect d3 to d9 
 
 const byte counterPin = 3; // connect d3 to d9
 const byte counterInterrupt = 1; // = d3
-const byte PWMpin = 9; // PWM only d9 or d10
-//const byte buzzerPin = 8;
-//const int PiezoBuzzerFreq = 2400;
+const byte PWMpin = 9; // PWM only on d9 or d10
 
 FreqPeriodCounter counter(counterPin, micros);
 
 void setup(void) 
 { Serial.begin(9600); 
-  //tone(buzzerPin, PiezoBuzzerFreq, 20);
   pinMode(PWMpin, OUTPUT);  
   Timer1.initialize(); 
   testAll();
